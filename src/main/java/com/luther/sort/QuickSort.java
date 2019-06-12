@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 public class QuickSort<T extends Comparable<T>> implements Sort<T> {
     public static void main(String[] args) {
         Integer[] values = Sort.of(3, 8, 2, 5, 4);
-        InsertionSort<Integer> sort = new InsertionSort<>();
+        QuickSort<Integer> sort = new QuickSort<>();
         sort.sort(values);
         Stream.of(values).forEach(System.out::println);
     }
